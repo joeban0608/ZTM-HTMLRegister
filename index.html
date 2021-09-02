@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Register</title>
+</head>
+<body>
+	<h1>Form method = "GET"</h1>
+	<hr>
+	<form method="GET">
+		<!-- <input type="" name=""> -->
+		First Name:<input type="text" name="firstname"><br>
+		Last Name:<input type="text" name="lastname"><br>
+		<!-- 加required 限制一定要輸入 -->
+		<!-- 加入minlength maxlength 來限制字數長度範圍 -->
+		Email:<input type="email" name="email" required><br>
+		Password:<input type="password" name="Password" placeholder="請輸入密碼6-12位" minlength="6" maxlength="12" required><br>
+		Birthday:<input type="date" name="birthday"><br>
+
+		<!-- Gender 用radio + 統一name變單選 -->
+		Gender:<br>
+		<input type="radio" name="gender" value="Male">Male
+		<input type="radio" name="gender" value="Female">Female
+		<input type="radio" name="gender" value="Other">Other<br>
+
+		<!-- Pets 用checkbox 沒設定name 可複選 -->
+		Pets:<br>
+		<input type="checkbox" name="cat">Cats
+		<input type="checkbox" name="dog">Dogs
+		<input type="checkbox" name="rabbit">Rabbits<br>
+
+		<!-- select syantax 可以加入mutiple 變為複選 <selcect multiple> -->
+		Cars:<br>
+		<select name="cars" multiple>
+			<option value="Audi">Audi</option>
+			<option value="Mazda">Mazda</option>
+		</select><hr>
+
+		<input type="submit" value="註冊">
+		<input type="reset" value="重設"><br>
+
+		<a href="./PostMethod.html">
+			<h2>Next</h2>
+		</a>
+	</form>
+</body>
+</html>
+
+<!-- URL___: file:///D:/Udemy/Web_Developer/HTML/5-35%20summitting_a_Form/register.html
+?firstname=joe
+&lastname=ban
+&email=joeanddaneil5%40gmail.com
+&Password=123456
+&birthday=2021-06-27
+&gender=Male
+&cat=on
+&rabbit=on
+&cars=Audi
+&cars=Mazda -->
